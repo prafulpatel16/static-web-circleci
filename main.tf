@@ -69,8 +69,8 @@ resource "aws_route53_zone" "myzone" {
 }
 */
 data "aws_route53_zone" "myzone" {
-  name         = var.domain_name
-  
+  name = var.domain_name
+
 }
 
 resource "aws_route53_record" "exampleDomain" {
