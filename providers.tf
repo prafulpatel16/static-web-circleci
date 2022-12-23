@@ -1,5 +1,11 @@
 # Terraform Block
 terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "4.48.0"
+    }
+  }
   cloud {
     organization = "prafect"
 
@@ -8,12 +14,7 @@ terraform {
     }
   }
 }
-required_providers {
-  aws = {
-    source  = "hashicorp/aws"
-    version = "4.48.0"
-  }
-}
+
 
 
 # Provider Block
